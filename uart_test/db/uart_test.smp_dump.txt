@@ -1,0 +1,15 @@
+
+State Machine - |uart_test|state
+Name state.initialize state.glow state.start 
+state.initialize 0 0 0 
+state.start 1 0 1 
+state.glow 1 1 0 
+
+State Machine - |uart_test|uart:uart_obj|PS
+Name PS.idle PS.stop2 PS.stop1 PS.data PS.start PS.prepare_data 
+PS.prepare_data 0 0 0 0 0 0 
+PS.start 0 0 0 0 1 1 
+PS.data 0 0 0 1 0 1 
+PS.stop1 0 0 1 0 0 1 
+PS.stop2 0 1 0 0 0 1 
+PS.idle 1 0 0 0 0 1 

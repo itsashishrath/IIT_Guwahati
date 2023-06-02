@@ -1,0 +1,101 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "tx",
+					"strict" : false
+				},
+				{
+					"name" : "status[0]",
+					"strict" : false
+				},
+				{
+					"name" : "status[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rec[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rec[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rec[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rec[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rec[4]",
+					"strict" : false
+				},
+				{
+					"name" : "rec[5]",
+					"strict" : false
+				},
+				{
+					"name" : "rec[6]",
+					"strict" : false
+				},
+				{
+					"name" : "rec[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ledA",
+					"strict" : false
+				},
+				{
+					"name" : "ledS",
+					"strict" : false
+				},
+				{
+					"name" : "ledD",
+					"strict" : false
+				},
+				{
+					"name" : "ledW",
+					"strict" : false
+				},
+				{
+					"name" : "uart_clk",
+					"strict" : false
+				},
+				{
+					"name" : "rx",
+					"strict" : false
+				},
+				{
+					"name" : "clk_50M",
+					"strict" : false
+				},
+				{
+					"name" : "rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tms",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tck",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdi",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdo",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
