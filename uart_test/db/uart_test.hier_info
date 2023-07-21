@@ -1,5 +1,5 @@
 |uart_test
-clk_50M => clk_50M.IN1
+clk_50M => clk_50M.IN2
 rst_n => rst_n.IN1
 tx <= uart:uart_obj.tx
 rx => store.DATAB
@@ -35,6 +35,7 @@ ledS <= leds.DB_MAX_OUTPUT_PORT_TYPE
 ledD <= ledd.DB_MAX_OUTPUT_PORT_TYPE
 ledW <= ledw.DB_MAX_OUTPUT_PORT_TYPE
 uart_clk <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+l_motor <= PWM:p.out
 
 
 |uart_test|uart:uart_obj
@@ -76,5 +77,47 @@ in_data[5] => data1[5][5].DATAIN
 in_data[6] => data1[5][6].DATAIN
 in_data[7] => data1[5][7].DATAIN
 tx <= tx_temp.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|uart_test|PWM:p
+clk_50 => edge_counter[0].CLK
+clk_50 => edge_counter[1].CLK
+clk_50 => edge_counter[2].CLK
+clk_50 => edge_counter[3].CLK
+clk_50 => edge_counter[4].CLK
+clk_50 => edge_counter[5].CLK
+clk_50 => edge_counter[6].CLK
+clk_50 => edge_counter[7].CLK
+clk_50 => edge_counter[8].CLK
+clk_50 => edge_counter[9].CLK
+clk_50 => edge_counter[10].CLK
+clk_50 => edge_counter[11].CLK
+clk_50 => edge_counter[12].CLK
+clk_50 => edge_counter[13].CLK
+clk_50 => edge_counter[14].CLK
+clk_50 => edge_counter[15].CLK
+clk_50 => edge_counter[16].CLK
+clk_50 => edge_counter[17].CLK
+clk_50 => edge_counter[18].CLK
+clk_50 => edge_counter[19].CLK
+clk_50 => edge_counter[20].CLK
+clk_50 => edge_counter[21].CLK
+clk_50 => edge_counter[22].CLK
+clk_50 => edge_counter[23].CLK
+clk_50 => edge_counter[24].CLK
+clk_50 => edge_counter[25].CLK
+clk_50 => edge_counter[26].CLK
+clk_50 => edge_counter[27].CLK
+clk_50 => edge_counter[28].CLK
+clk_50 => edge_counter[29].CLK
+DUTY_CYCLE[0] => Mult0.IN16
+DUTY_CYCLE[1] => Mult0.IN15
+DUTY_CYCLE[2] => Mult0.IN14
+DUTY_CYCLE[3] => Mult0.IN13
+DUTY_CYCLE[4] => Mult0.IN12
+DUTY_CYCLE[5] => Mult0.IN11
+DUTY_CYCLE[6] => Mult0.IN10
+DUTY_CYCLE[7] => Mult0.IN9
+out <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
 
 

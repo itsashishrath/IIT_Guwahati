@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE22F17) Path("C:/Users/Ashish Rathore/Desktop/eyrc22_SB_3320/uart_test/output_files/") File("uart_test.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE22F17) Path("C:/Users/hp/Music/IIT_Guwahati-main/uart_test/output_files/") File("uart_test.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

@@ -68,6 +68,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "l_motor",
+					"strict" : false
+				},
+				{
 					"name" : "rx",
 					"strict" : false
 				},
