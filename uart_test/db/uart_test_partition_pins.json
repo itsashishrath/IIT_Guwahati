@@ -72,6 +72,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "r_motor",
+					"strict" : false
+				},
+				{
 					"name" : "rx",
 					"strict" : false
 				},

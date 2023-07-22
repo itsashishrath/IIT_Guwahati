@@ -29,10 +29,10 @@ module PWM(
 
    reg[29:0] edge_counter = 30'd0;
    wire[29:0] active_edge ;
-	assign active_edge = DUTY_CYCLE*30'd500;
+	assign active_edge = DUTY_CYCLE*30'd50000;
   
   always @(posedge clk_50) begin
-    if(edge_counter<30'd50000)
+    if(edge_counter<30'd5000000)
 	 edge_counter <= edge_counter+30'd1;
 	 else edge_counter<=30'd1;
   end

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for uart_test
-Sat Jul 22 00:16:46 2023
+Sat Jul 22 15:50:03 2023
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -61,16 +61,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Jul 22 00:16:46 2023       ;
+; Analysis & Synthesis Status        ; Successful - Sat Jul 22 15:50:03 2023       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; uart_test                                   ;
 ; Top-level Entity Name              ; uart_test                                   ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 1,394                                       ;
-;     Total combinational functions  ; 829                                         ;
+; Total logic elements               ; 1,413                                       ;
+;     Total combinational functions  ; 848                                         ;
 ;     Dedicated logic registers      ; 1,034                                       ;
 ; Total registers                    ; 1034                                        ;
-; Total pins                         ; 26                                          ;
+; Total pins                         ; 29                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 5,632                                       ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -169,111 +169,111 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 12          ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
-;     Processors 3-12        ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                               ;
-+--------------------------------------------------------------------+-----------------+----------------------------------------------+------------------------------------------------------------------------------------------------------------------+-------------+
-; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                                                     ; Library     ;
-+--------------------------------------------------------------------+-----------------+----------------------------------------------+------------------------------------------------------------------------------------------------------------------+-------------+
-; uart_test.v                                                        ; yes             ; User Verilog HDL File                        ; C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart_test.v                                                        ;             ;
-; uart.v                                                             ; yes             ; Auto-Found Verilog HDL File                  ; C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v                                                             ;             ;
-; pwm.v                                                              ; yes             ; Auto-Found Verilog HDL File                  ; C:/Users/hp/Music/IIT_Guwahati-main/uart_test/pwm.v                                                              ;             ;
-; sld_signaltap.vhd                                                  ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/sld_signaltap.vhd                                             ;             ;
-; sld_signaltap_impl.vhd                                             ; yes             ; Encrypted Megafunction                       ; d:/intel_lite_19.1/quartus/libraries/megafunctions/sld_signaltap_impl.vhd                                        ;             ;
-; sld_ela_control.vhd                                                ; yes             ; Encrypted Megafunction                       ; d:/intel_lite_19.1/quartus/libraries/megafunctions/sld_ela_control.vhd                                           ;             ;
-; lpm_shiftreg.tdf                                                   ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/lpm_shiftreg.tdf                                              ;             ;
-; lpm_constant.inc                                                   ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/lpm_constant.inc                                              ;             ;
-; dffeea.inc                                                         ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/dffeea.inc                                                    ;             ;
-; aglobal191.inc                                                     ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/aglobal191.inc                                                ;             ;
-; sld_mbpmg.vhd                                                      ; yes             ; Encrypted Megafunction                       ; d:/intel_lite_19.1/quartus/libraries/megafunctions/sld_mbpmg.vhd                                                 ;             ;
-; sld_ela_trigger_flow_mgr.vhd                                       ; yes             ; Encrypted Megafunction                       ; d:/intel_lite_19.1/quartus/libraries/megafunctions/sld_ela_trigger_flow_mgr.vhd                                  ;             ;
-; sld_buffer_manager.vhd                                             ; yes             ; Encrypted Megafunction                       ; d:/intel_lite_19.1/quartus/libraries/megafunctions/sld_buffer_manager.vhd                                        ;             ;
-; altsyncram.tdf                                                     ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/altsyncram.tdf                                                ;             ;
-; stratix_ram_block.inc                                              ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                         ;             ;
-; lpm_mux.inc                                                        ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/lpm_mux.inc                                                   ;             ;
-; lpm_decode.inc                                                     ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/lpm_decode.inc                                                ;             ;
-; a_rdenreg.inc                                                      ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                 ;             ;
-; altrom.inc                                                         ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/altrom.inc                                                    ;             ;
-; altram.inc                                                         ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/altram.inc                                                    ;             ;
-; altdpram.inc                                                       ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/altdpram.inc                                                  ;             ;
-; db/altsyncram_7524.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/altsyncram_7524.tdf                                             ;             ;
-; altdpram.tdf                                                       ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/altdpram.tdf                                                  ;             ;
-; memmodes.inc                                                       ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/others/maxplus2/memmodes.inc                                                ;             ;
-; a_hdffe.inc                                                        ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/a_hdffe.inc                                                   ;             ;
-; alt_le_rden_reg.inc                                                ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/alt_le_rden_reg.inc                                           ;             ;
-; altsyncram.inc                                                     ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/altsyncram.inc                                                ;             ;
-; lpm_mux.tdf                                                        ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/lpm_mux.tdf                                                   ;             ;
-; muxlut.inc                                                         ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/muxlut.inc                                                    ;             ;
-; bypassff.inc                                                       ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/bypassff.inc                                                  ;             ;
-; altshift.inc                                                       ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/altshift.inc                                                  ;             ;
-; db/mux_ssc.tdf                                                     ; yes             ; Auto-Generated Megafunction                  ; C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/mux_ssc.tdf                                                     ;             ;
-; lpm_decode.tdf                                                     ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/lpm_decode.tdf                                                ;             ;
-; declut.inc                                                         ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/declut.inc                                                    ;             ;
-; lpm_compare.inc                                                    ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/lpm_compare.inc                                               ;             ;
-; db/decode_dvf.tdf                                                  ; yes             ; Auto-Generated Megafunction                  ; C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/decode_dvf.tdf                                                  ;             ;
-; lpm_counter.tdf                                                    ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/lpm_counter.tdf                                               ;             ;
-; lpm_add_sub.inc                                                    ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/lpm_add_sub.inc                                               ;             ;
-; cmpconst.inc                                                       ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/cmpconst.inc                                                  ;             ;
-; lpm_counter.inc                                                    ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/lpm_counter.inc                                               ;             ;
-; alt_counter_stratix.inc                                            ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/alt_counter_stratix.inc                                       ;             ;
-; db/cntr_kgi.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/cntr_kgi.tdf                                                    ;             ;
-; db/cmpr_sgc.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/cmpr_sgc.tdf                                                    ;             ;
-; db/cntr_i6j.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/cntr_i6j.tdf                                                    ;             ;
-; db/cntr_egi.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/cntr_egi.tdf                                                    ;             ;
-; db/cmpr_qgc.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/cmpr_qgc.tdf                                                    ;             ;
-; db/cntr_23j.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/cntr_23j.tdf                                                    ;             ;
-; db/cmpr_ngc.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/cmpr_ngc.tdf                                                    ;             ;
-; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                       ; d:/intel_lite_19.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                                                ;             ;
-; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; d:/intel_lite_19.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd                                 ;             ;
-; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                       ; d:/intel_lite_19.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv                             ;             ;
-; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction                       ; d:/intel_lite_19.1/quartus/libraries/megafunctions/sld_hub.vhd                                                   ; altera_sld  ;
-; db/ip/sld605b8bcd/alt_sld_fab.v                                    ; yes             ; Encrypted Auto-Found Verilog HDL File        ; C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/ip/sld605b8bcd/alt_sld_fab.v                                    ; alt_sld_fab ;
-; db/ip/sld605b8bcd/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Auto-Found Verilog HDL File        ; C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/ip/sld605b8bcd/submodules/alt_sld_fab_alt_sld_fab.v             ; alt_sld_fab ;
-; db/ip/sld605b8bcd/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File            ; C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/ip/sld605b8bcd/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; alt_sld_fab ;
-; db/ip/sld605b8bcd/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/ip/sld605b8bcd/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; alt_sld_fab ;
-; db/ip/sld605b8bcd/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/ip/sld605b8bcd/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
-; db/ip/sld605b8bcd/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/ip/sld605b8bcd/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
-; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                       ; d:/intel_lite_19.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                                              ;             ;
-; lpm_mult.tdf                                                       ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/lpm_mult.tdf                                                  ;             ;
-; multcore.inc                                                       ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/multcore.inc                                                  ;             ;
-; multcore.tdf                                                       ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/multcore.tdf                                                  ;             ;
-; csa_add.inc                                                        ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/csa_add.inc                                                   ;             ;
-; mpar_add.inc                                                       ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/mpar_add.inc                                                  ;             ;
-; muleabz.inc                                                        ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/muleabz.inc                                                   ;             ;
-; mul_lfrg.inc                                                       ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/mul_lfrg.inc                                                  ;             ;
-; mul_boothc.inc                                                     ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/mul_boothc.inc                                                ;             ;
-; alt_ded_mult.inc                                                   ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/alt_ded_mult.inc                                              ;             ;
-; alt_ded_mult_y.inc                                                 ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/alt_ded_mult_y.inc                                            ;             ;
-; dffpipe.inc                                                        ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/dffpipe.inc                                                   ;             ;
-; mpar_add.tdf                                                       ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/mpar_add.tdf                                                  ;             ;
-; lpm_add_sub.tdf                                                    ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/lpm_add_sub.tdf                                               ;             ;
-; addcore.inc                                                        ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/addcore.inc                                                   ;             ;
-; look_add.inc                                                       ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/look_add.inc                                                  ;             ;
-; alt_stratix_add_sub.inc                                            ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/alt_stratix_add_sub.inc                                       ;             ;
-; db/add_sub_mgh.tdf                                                 ; yes             ; Auto-Generated Megafunction                  ; C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/add_sub_mgh.tdf                                                 ;             ;
-; altshift.tdf                                                       ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/altshift.tdf                                                  ;             ;
-; db/add_sub_kgh.tdf                                                 ; yes             ; Auto-Generated Megafunction                  ; C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/add_sub_kgh.tdf                                                 ;             ;
-; lpm_divide.tdf                                                     ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/lpm_divide.tdf                                                ;             ;
-; abs_divider.inc                                                    ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/abs_divider.inc                                               ;             ;
-; sign_div_unsign.inc                                                ; yes             ; Megafunction                                 ; d:/intel_lite_19.1/quartus/libraries/megafunctions/sign_div_unsign.inc                                           ;             ;
-; db/lpm_divide_4jm.tdf                                              ; yes             ; Auto-Generated Megafunction                  ; C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/lpm_divide_4jm.tdf                                              ;             ;
-; db/sign_div_unsign_slh.tdf                                         ; yes             ; Auto-Generated Megafunction                  ; C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/sign_div_unsign_slh.tdf                                         ;             ;
-; db/alt_u_div_c7f.tdf                                               ; yes             ; Auto-Generated Megafunction                  ; C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/alt_u_div_c7f.tdf                                               ;             ;
-; db/add_sub_7pc.tdf                                                 ; yes             ; Auto-Generated Megafunction                  ; C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/add_sub_7pc.tdf                                                 ;             ;
-; db/add_sub_8pc.tdf                                                 ; yes             ; Auto-Generated Megafunction                  ; C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/add_sub_8pc.tdf                                                 ;             ;
-+--------------------------------------------------------------------+-----------------+----------------------------------------------+------------------------------------------------------------------------------------------------------------------+-------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                               ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+-------------+
+; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                                                                     ; Library     ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+-------------+
+; uart_test.v                                                        ; yes             ; User Verilog HDL File                        ; C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart_test.v                                                        ;             ;
+; uart.v                                                             ; yes             ; Auto-Found Verilog HDL File                  ; C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v                                                             ;             ;
+; pwm.v                                                              ; yes             ; Auto-Found Verilog HDL File                  ; C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/pwm.v                                                              ;             ;
+; sld_signaltap.vhd                                                  ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sld_signaltap.vhd                                                         ;             ;
+; sld_signaltap_impl.vhd                                             ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sld_signaltap_impl.vhd                                                    ;             ;
+; sld_ela_control.vhd                                                ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sld_ela_control.vhd                                                       ;             ;
+; lpm_shiftreg.tdf                                                   ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_shiftreg.tdf                                                          ;             ;
+; lpm_constant.inc                                                   ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_constant.inc                                                          ;             ;
+; dffeea.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/dffeea.inc                                                                ;             ;
+; aglobal191.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/aglobal191.inc                                                            ;             ;
+; sld_mbpmg.vhd                                                      ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sld_mbpmg.vhd                                                             ;             ;
+; sld_ela_trigger_flow_mgr.vhd                                       ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sld_ela_trigger_flow_mgr.vhd                                              ;             ;
+; sld_buffer_manager.vhd                                             ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sld_buffer_manager.vhd                                                    ;             ;
+; altsyncram.tdf                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altsyncram.tdf                                                            ;             ;
+; stratix_ram_block.inc                                              ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                     ;             ;
+; lpm_mux.inc                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_mux.inc                                                               ;             ;
+; lpm_decode.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_decode.inc                                                            ;             ;
+; a_rdenreg.inc                                                      ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                             ;             ;
+; altrom.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altrom.inc                                                                ;             ;
+; altram.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altram.inc                                                                ;             ;
+; altdpram.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altdpram.inc                                                              ;             ;
+; db/altsyncram_7524.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/db/altsyncram_7524.tdf                                             ;             ;
+; altdpram.tdf                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altdpram.tdf                                                              ;             ;
+; memmodes.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/others/maxplus2/memmodes.inc                                                            ;             ;
+; a_hdffe.inc                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/a_hdffe.inc                                                               ;             ;
+; alt_le_rden_reg.inc                                                ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/alt_le_rden_reg.inc                                                       ;             ;
+; altsyncram.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altsyncram.inc                                                            ;             ;
+; lpm_mux.tdf                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_mux.tdf                                                               ;             ;
+; muxlut.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/muxlut.inc                                                                ;             ;
+; bypassff.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/bypassff.inc                                                              ;             ;
+; altshift.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altshift.inc                                                              ;             ;
+; db/mux_ssc.tdf                                                     ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/db/mux_ssc.tdf                                                     ;             ;
+; lpm_decode.tdf                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_decode.tdf                                                            ;             ;
+; declut.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/declut.inc                                                                ;             ;
+; lpm_compare.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_compare.inc                                                           ;             ;
+; db/decode_dvf.tdf                                                  ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/db/decode_dvf.tdf                                                  ;             ;
+; lpm_counter.tdf                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_counter.tdf                                                           ;             ;
+; lpm_add_sub.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_add_sub.inc                                                           ;             ;
+; cmpconst.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/cmpconst.inc                                                              ;             ;
+; lpm_counter.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_counter.inc                                                           ;             ;
+; alt_counter_stratix.inc                                            ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/alt_counter_stratix.inc                                                   ;             ;
+; db/cntr_kgi.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/db/cntr_kgi.tdf                                                    ;             ;
+; db/cmpr_sgc.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/db/cmpr_sgc.tdf                                                    ;             ;
+; db/cntr_i6j.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/db/cntr_i6j.tdf                                                    ;             ;
+; db/cntr_egi.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/db/cntr_egi.tdf                                                    ;             ;
+; db/cmpr_qgc.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/db/cmpr_qgc.tdf                                                    ;             ;
+; db/cntr_23j.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/db/cntr_23j.tdf                                                    ;             ;
+; db/cmpr_ngc.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/db/cmpr_ngc.tdf                                                    ;             ;
+; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                                                            ;             ;
+; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd                                             ;             ;
+; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv                                         ;             ;
+; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sld_hub.vhd                                                               ; altera_sld  ;
+; db/ip/sld605b8bcd/alt_sld_fab.v                                    ; yes             ; Encrypted Auto-Found Verilog HDL File        ; C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/db/ip/sld605b8bcd/alt_sld_fab.v                                    ; alt_sld_fab ;
+; db/ip/sld605b8bcd/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Auto-Found Verilog HDL File        ; C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/db/ip/sld605b8bcd/submodules/alt_sld_fab_alt_sld_fab.v             ; alt_sld_fab ;
+; db/ip/sld605b8bcd/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File            ; C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/db/ip/sld605b8bcd/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; alt_sld_fab ;
+; db/ip/sld605b8bcd/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/db/ip/sld605b8bcd/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; alt_sld_fab ;
+; db/ip/sld605b8bcd/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/db/ip/sld605b8bcd/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
+; db/ip/sld605b8bcd/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/db/ip/sld605b8bcd/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
+; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                                                          ;             ;
+; lpm_mult.tdf                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_mult.tdf                                                              ;             ;
+; multcore.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/multcore.inc                                                              ;             ;
+; multcore.tdf                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/multcore.tdf                                                              ;             ;
+; csa_add.inc                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/csa_add.inc                                                               ;             ;
+; mpar_add.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/mpar_add.inc                                                              ;             ;
+; muleabz.inc                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/muleabz.inc                                                               ;             ;
+; mul_lfrg.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/mul_lfrg.inc                                                              ;             ;
+; mul_boothc.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/mul_boothc.inc                                                            ;             ;
+; alt_ded_mult.inc                                                   ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/alt_ded_mult.inc                                                          ;             ;
+; alt_ded_mult_y.inc                                                 ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/alt_ded_mult_y.inc                                                        ;             ;
+; dffpipe.inc                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/dffpipe.inc                                                               ;             ;
+; mpar_add.tdf                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/mpar_add.tdf                                                              ;             ;
+; lpm_add_sub.tdf                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_add_sub.tdf                                                           ;             ;
+; addcore.inc                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/addcore.inc                                                               ;             ;
+; look_add.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/look_add.inc                                                              ;             ;
+; alt_stratix_add_sub.inc                                            ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/alt_stratix_add_sub.inc                                                   ;             ;
+; db/add_sub_kgh.tdf                                                 ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/db/add_sub_kgh.tdf                                                 ;             ;
+; altshift.tdf                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altshift.tdf                                                              ;             ;
+; lpm_divide.tdf                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_divide.tdf                                                            ;             ;
+; abs_divider.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/abs_divider.inc                                                           ;             ;
+; sign_div_unsign.inc                                                ; yes             ; Megafunction                                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sign_div_unsign.inc                                                       ;             ;
+; db/lpm_divide_4jm.tdf                                              ; yes             ; Auto-Generated Megafunction                  ; db/lpm_divide_4jm.tdf                                                                                                            ;             ;
+; db/sign_div_unsign_slh.tdf                                         ; yes             ; Auto-Generated Megafunction                  ; db/sign_div_unsign_slh.tdf                                                                                                       ;             ;
+; db/alt_u_div_c7f.tdf                                               ; yes             ; Auto-Generated Megafunction                  ; db/alt_u_div_c7f.tdf                                                                                                             ;             ;
+; db/add_sub_7pc.tdf                                                 ; yes             ; Auto-Generated Megafunction                  ; db/add_sub_7pc.tdf                                                                                                               ;             ;
+; db/add_sub_8pc.tdf                                                 ; yes             ; Auto-Generated Megafunction                  ; db/add_sub_8pc.tdf                                                                                                               ;             ;
+; db/add_sub_mgh.tdf                                                 ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/db/add_sub_mgh.tdf                                                 ;             ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+-------------+
 
 
 +-------------------------------------------------------------+
@@ -281,31 +281,31 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+---------------+
 ; Resource                                    ; Usage         ;
 +---------------------------------------------+---------------+
-; Estimated Total logic elements              ; 1,394         ;
+; Estimated Total logic elements              ; 1,413         ;
 ;                                             ;               ;
-; Total combinational functions               ; 829           ;
+; Total combinational functions               ; 848           ;
 ; Logic element usage by number of LUT inputs ;               ;
-;     -- 4 input functions                    ; 333           ;
-;     -- 3 input functions                    ; 206           ;
-;     -- <=2 input functions                  ; 290           ;
+;     -- 4 input functions                    ; 335           ;
+;     -- 3 input functions                    ; 218           ;
+;     -- <=2 input functions                  ; 295           ;
 ;                                             ;               ;
 ; Logic elements by mode                      ;               ;
-;     -- normal mode                          ; 639           ;
-;     -- arithmetic mode                      ; 190           ;
+;     -- normal mode                          ; 648           ;
+;     -- arithmetic mode                      ; 200           ;
 ;                                             ;               ;
 ; Total registers                             ; 1034          ;
 ;     -- Dedicated logic registers            ; 1034          ;
 ;     -- I/O registers                        ; 0             ;
 ;                                             ;               ;
-; I/O pins                                    ; 26            ;
+; I/O pins                                    ; 29            ;
 ; Total memory bits                           ; 5632          ;
 ;                                             ;               ;
 ; Embedded Multiplier 9-bit elements          ; 0             ;
 ;                                             ;               ;
 ; Maximum fan-out node                        ; clk_50M~input ;
 ; Maximum fan-out                             ; 563           ;
-; Total fan-out                               ; 6482          ;
-; Average fan-out                             ; 3.29          ;
+; Total fan-out                               ; 6541          ;
+; Average fan-out                             ; 3.28          ;
 +---------------------------------------------+---------------+
 
 
@@ -314,13 +314,13 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                   ; Entity Name                       ; Library Name ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
-; |uart_test                                                                                                                              ; 829 (66)            ; 1034 (50)                 ; 5632        ; 0            ; 0       ; 0         ; 26   ; 0            ; |uart_test                                                                                                                                                                                                                                                                                                                                            ; uart_test                         ; work         ;
-;    |PWM:p|                                                                                                                              ; 80 (56)             ; 30 (30)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uart_test|PWM:p                                                                                                                                                                                                                                                                                                                                      ; PWM                               ; work         ;
-;       |lpm_mult:Mult0|                                                                                                                  ; 24 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uart_test|PWM:p|lpm_mult:Mult0                                                                                                                                                                                                                                                                                                                       ; lpm_mult                          ; work         ;
-;          |multcore:mult_core|                                                                                                           ; 24 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uart_test|PWM:p|lpm_mult:Mult0|multcore:mult_core                                                                                                                                                                                                                                                                                                    ; multcore                          ; work         ;
-;             |mpar_add:padder|                                                                                                           ; 10 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uart_test|PWM:p|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder                                                                                                                                                                                                                                                                                    ; mpar_add                          ; work         ;
-;                |lpm_add_sub:adder[0]|                                                                                                   ; 10 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uart_test|PWM:p|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]                                                                                                                                                                                                                                                               ; lpm_add_sub                       ; work         ;
-;                   |add_sub_mgh:auto_generated|                                                                                          ; 10 (10)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uart_test|PWM:p|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_mgh:auto_generated                                                                                                                                                                                                                                    ; add_sub_mgh                       ; work         ;
+; |uart_test                                                                                                                              ; 848 (66)            ; 1034 (50)                 ; 5632        ; 0            ; 0       ; 0         ; 29   ; 0            ; |uart_test                                                                                                                                                                                                                                                                                                                                            ; uart_test                         ; work         ;
+;    |PWM:p|                                                                                                                              ; 100 (62)            ; 30 (30)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uart_test|PWM:p                                                                                                                                                                                                                                                                                                                                      ; PWM                               ; work         ;
+;       |lpm_mult:Mult0|                                                                                                                  ; 38 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uart_test|PWM:p|lpm_mult:Mult0                                                                                                                                                                                                                                                                                                                       ; lpm_mult                          ; work         ;
+;          |multcore:mult_core|                                                                                                           ; 38 (23)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uart_test|PWM:p|lpm_mult:Mult0|multcore:mult_core                                                                                                                                                                                                                                                                                                    ; multcore                          ; work         ;
+;             |mpar_add:padder|                                                                                                           ; 15 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uart_test|PWM:p|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder                                                                                                                                                                                                                                                                                    ; mpar_add                          ; work         ;
+;                |lpm_add_sub:adder[0]|                                                                                                   ; 15 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uart_test|PWM:p|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]                                                                                                                                                                                                                                                               ; lpm_add_sub                       ; work         ;
+;                   |add_sub_kgh:auto_generated|                                                                                          ; 15 (15)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uart_test|PWM:p|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_kgh:auto_generated                                                                                                                                                                                                                                    ; add_sub_kgh                       ; work         ;
 ;    |sld_hub:auto_hub|                                                                                                                   ; 122 (1)             ; 90 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uart_test|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                           ; sld_hub                           ; altera_sld   ;
 ;       |alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric| ; 121 (0)             ; 90 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uart_test|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric                                                                                                                                                                                           ; alt_sld_fab_with_jtag_input       ; altera_sld   ;
 ;          |alt_sld_fab:instrumentation_fabric|                                                                                           ; 121 (0)             ; 90 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uart_test|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric                                                                                                                                                        ; alt_sld_fab                       ; alt_sld_fab  ;
@@ -407,7 +407,7 @@ https://fpgasoftware.intel.com/eula.
 ;                |lpm_shiftreg:ram_data_shift_out|                                                                                        ; 44 (44)             ; 44 (44)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uart_test|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_shiftreg:ram_data_shift_out                                                                                                               ; lpm_shiftreg                      ; work         ;
 ;                |lpm_shiftreg:status_data_shift_out|                                                                                     ; 15 (15)             ; 15 (15)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uart_test|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_shiftreg:status_data_shift_out                                                                                                            ; lpm_shiftreg                      ; work         ;
 ;             |sld_rom_sr:crc_rom_sr|                                                                                                     ; 30 (30)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uart_test|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_rom_sr:crc_rom_sr                                                                                                                                                                                                          ; sld_rom_sr                        ; work         ;
-;    |uart:uart_obj|                                                                                                                      ; 122 (122)           ; 63 (63)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uart_test|uart:uart_obj                                                                                                                                                                                                                                                                                                                              ; uart                              ; work         ;
+;    |uart:uart_obj|                                                                                                                      ; 121 (121)           ; 63 (63)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uart_test|uart:uart_obj                                                                                                                                                                                                                                                                                                                              ; uart                              ; work         ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -663,9 +663,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE        ;
 ; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE      ;
 ; LPM_WIDTHA                                     ; 7            ; Untyped             ;
-; LPM_WIDTHB                                     ; 9            ; Untyped             ;
-; LPM_WIDTHP                                     ; 16           ; Untyped             ;
-; LPM_WIDTHR                                     ; 16           ; Untyped             ;
+; LPM_WIDTHB                                     ; 16           ; Untyped             ;
+; LPM_WIDTHP                                     ; 23           ; Untyped             ;
+; LPM_WIDTHR                                     ; 23           ; Untyped             ;
 ; LPM_WIDTHS                                     ; 1            ; Untyped             ;
 ; LPM_REPRESENTATION                             ; UNSIGNED     ; Untyped             ;
 ; LPM_PIPELINE                                   ; 0            ; Untyped             ;
@@ -673,7 +673,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped             ;
 ; INPUT_B_IS_CONSTANT                            ; YES          ; Untyped             ;
 ; USE_EAB                                        ; OFF          ; Untyped             ;
-; MAXIMIZE_SPEED                                 ; 5            ; Untyped             ;
+; MAXIMIZE_SPEED                                 ; 6            ; Untyped             ;
 ; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped             ;
 ; CARRY_CHAIN                                    ; MANUAL       ; Untyped             ;
 ; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K ;
@@ -696,8 +696,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Number of entity instances            ; 1                    ;
 ; Entity Instance                       ; PWM:p|lpm_mult:Mult0 ;
 ;     -- LPM_WIDTHA                     ; 7                    ;
-;     -- LPM_WIDTHB                     ; 9                    ;
-;     -- LPM_WIDTHP                     ; 16                   ;
+;     -- LPM_WIDTHB                     ; 16                   ;
+;     -- LPM_WIDTHP                     ; 23                   ;
 ;     -- LPM_REPRESENTATION             ; UNSIGNED             ;
 ;     -- INPUT_A_IS_CONSTANT            ; NO                   ;
 ;     -- INPUT_B_IS_CONSTANT            ; YES                  ;
@@ -736,26 +736,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 51                          ;
+; boundary_port         ; 54                          ;
 ; cycloneiii_ff         ; 143                         ;
 ;     CLR               ; 6                           ;
 ;     CLR SCLR          ; 28                          ;
 ;     ENA               ; 66                          ;
 ;     SLD               ; 30                          ;
 ;     plain             ; 13                          ;
-; cycloneiii_lcell_comb ; 269                         ;
-;     arith             ; 115                         ;
-;         2 data inputs ; 96                          ;
-;         3 data inputs ; 19                          ;
-;     normal            ; 154                         ;
+; cycloneiii_lcell_comb ; 288                         ;
+;     arith             ; 125                         ;
+;         2 data inputs ; 98                          ;
+;         3 data inputs ; 27                          ;
+;     normal            ; 163                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 10                          ;
-;         2 data inputs ; 50                          ;
-;         3 data inputs ; 32                          ;
-;         4 data inputs ; 61                          ;
+;         1 data inputs ; 9                           ;
+;         2 data inputs ; 54                          ;
+;         3 data inputs ; 36                          ;
+;         4 data inputs ; 63                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.90                        ;
-; Average LUT depth     ; 3.34                        ;
+; Max LUT depth         ; 6.80                        ;
+; Average LUT depth     ; 3.58                        ;
 +-----------------------+-----------------------------+
 
 
@@ -773,8 +773,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------------+---------------+-----------+--------------------------------+-------------------+-------------------------------------+---------+
 ; Name                 ; Type          ; Status    ; Partition Name                 ; Netlist Type Used ; Actual Connection                   ; Details ;
 +----------------------+---------------+-----------+--------------------------------+-------------------+-------------------------------------+---------+
-; PWM:p|out            ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PWM:p|LessThan1~29_wirecell         ; N/A     ;
-; PWM:p|out            ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PWM:p|LessThan1~29_wirecell         ; N/A     ;
+; PWM:p|out            ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PWM:p|LessThan1~40_wirecell         ; N/A     ;
+; PWM:p|out            ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PWM:p|LessThan1~40_wirecell         ; N/A     ;
 ; clk_50M              ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; clk_50M                             ; N/A     ;
 ; left_motor[0]        ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                 ; N/A     ;
 ; left_motor[0]        ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                 ; N/A     ;
@@ -903,116 +903,118 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Sat Jul 22 00:16:17 2023
+    Info: Processing started: Sat Jul 22 15:49:33 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off uart_test -c uart_test
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file uart_test.v
-    Info (12023): Found entity 1: uart_test File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart_test.v Line: 5
+    Info (12023): Found entity 1: uart_test File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart_test.v Line: 5
 Warning (12019): Can't analyze file -- file output_files/PWM.v is missing
-Warning (10236): Verilog HDL Implicit Net warning at uart_test.v(128): created implicit net for "tx_temp" File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart_test.v Line: 128
+Warning (10236): Verilog HDL Implicit Net warning at uart_test.v(130): created implicit net for "tx_temp" File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart_test.v Line: 130
 Info (12127): Elaborating entity "uart_test" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at uart_test.v(30): truncated value with size 14 to match size of target (8) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart_test.v Line: 30
-Warning (10230): Verilog HDL assignment warning at uart_test.v(69): truncated value with size 15 to match size of target (14) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart_test.v Line: 69
-Warning (10230): Verilog HDL assignment warning at uart_test.v(70): truncated value with size 32 to match size of target (8) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart_test.v Line: 70
+Warning (10230): Verilog HDL assignment warning at uart_test.v(32): truncated value with size 14 to match size of target (8) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart_test.v Line: 32
+Warning (10230): Verilog HDL assignment warning at uart_test.v(71): truncated value with size 15 to match size of target (14) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart_test.v Line: 71
+Warning (10230): Verilog HDL assignment warning at uart_test.v(72): truncated value with size 32 to match size of target (8) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart_test.v Line: 72
+Warning (10034): Output port "gndl" at uart_test.v(9) has no driver File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart_test.v Line: 9
+Warning (10034): Output port "gndr" at uart_test.v(9) has no driver File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart_test.v Line: 9
 Warning (12125): Using design file uart.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: uart File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 20
-Info (12128): Elaborating entity "uart" for hierarchy "uart:uart_obj" File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart_test.v Line: 128
-Warning (10235): Verilog HDL Always Construct warning at uart.v(76): variable "in_data" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 76
-Info (10264): Verilog HDL Case Statement information at uart.v(72): all case item expressions in this case statement are onehot File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 72
-Warning (10240): Verilog HDL Always Construct warning at uart.v(71): inferring latch(es) for variable "tx_temp", which holds its previous value in one or more paths through the always construct File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "tx_temp" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[0][0]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[0][1]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[0][2]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[0][3]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[0][4]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[0][5]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[0][6]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[0][7]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[1][0]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[1][1]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[1][2]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[1][3]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[1][4]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[1][5]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[1][6]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[1][7]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[2][0]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[2][1]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[2][2]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[2][3]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[2][4]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[2][5]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[2][6]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[2][7]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[3][0]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[3][1]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[3][2]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[3][3]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[3][4]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[3][5]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[3][6]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[3][7]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[4][0]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[4][1]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[4][2]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[4][3]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[4][4]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[4][5]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[4][6]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[4][7]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[5][0]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[5][1]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[5][2]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[5][3]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[5][4]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[5][5]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[5][6]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[5][7]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[6][0]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[6][1]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[6][2]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[6][3]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[6][4]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[6][5]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[6][6]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[6][7]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[7][0]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[7][1]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[7][2]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[7][3]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[7][4]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[7][5]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[7][6]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
-Info (10041): Inferred latch for "data1[7][7]" at uart.v(71) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart.v Line: 71
+    Info (12023): Found entity 1: uart File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 20
+Info (12128): Elaborating entity "uart" for hierarchy "uart:uart_obj" File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart_test.v Line: 130
+Warning (10235): Verilog HDL Always Construct warning at uart.v(76): variable "in_data" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 76
+Info (10264): Verilog HDL Case Statement information at uart.v(72): all case item expressions in this case statement are onehot File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 72
+Warning (10240): Verilog HDL Always Construct warning at uart.v(71): inferring latch(es) for variable "tx_temp", which holds its previous value in one or more paths through the always construct File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "tx_temp" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[0][0]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[0][1]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[0][2]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[0][3]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[0][4]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[0][5]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[0][6]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[0][7]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[1][0]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[1][1]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[1][2]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[1][3]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[1][4]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[1][5]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[1][6]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[1][7]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[2][0]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[2][1]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[2][2]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[2][3]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[2][4]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[2][5]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[2][6]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[2][7]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[3][0]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[3][1]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[3][2]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[3][3]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[3][4]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[3][5]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[3][6]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[3][7]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[4][0]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[4][1]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[4][2]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[4][3]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[4][4]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[4][5]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[4][6]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[4][7]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[5][0]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[5][1]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[5][2]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[5][3]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[5][4]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[5][5]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[5][6]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[5][7]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[6][0]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[6][1]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[6][2]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[6][3]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[6][4]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[6][5]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[6][6]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[6][7]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[7][0]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[7][1]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[7][2]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[7][3]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[7][4]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[7][5]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[7][6]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
+Info (10041): Inferred latch for "data1[7][7]" at uart.v(71) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart.v Line: 71
 Warning (12125): Using design file pwm.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: PWM File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/pwm.v Line: 21
-Info (12128): Elaborating entity "PWM" for hierarchy "PWM:p" File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart_test.v Line: 130
-Warning (10230): Verilog HDL assignment warning at pwm.v(41): truncated value with size 32 to match size of target (1) File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/pwm.v Line: 41
+    Info (12023): Found entity 1: PWM File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/pwm.v Line: 21
+Info (12128): Elaborating entity "PWM" for hierarchy "PWM:p" File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart_test.v Line: 132
+Warning (10230): Verilog HDL assignment warning at pwm.v(41): truncated value with size 32 to match size of target (1) File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/pwm.v Line: 41
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_7524.tdf
-    Info (12023): Found entity 1: altsyncram_7524 File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/altsyncram_7524.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_7524 File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/db/altsyncram_7524.tdf Line: 28
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_ssc.tdf
-    Info (12023): Found entity 1: mux_ssc File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/mux_ssc.tdf Line: 23
+    Info (12023): Found entity 1: mux_ssc File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/db/mux_ssc.tdf Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_dvf.tdf
-    Info (12023): Found entity 1: decode_dvf File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/decode_dvf.tdf Line: 23
+    Info (12023): Found entity 1: decode_dvf File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/db/decode_dvf.tdf Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_kgi.tdf
-    Info (12023): Found entity 1: cntr_kgi File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/cntr_kgi.tdf Line: 28
+    Info (12023): Found entity 1: cntr_kgi File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/db/cntr_kgi.tdf Line: 28
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_sgc.tdf
-    Info (12023): Found entity 1: cmpr_sgc File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/cmpr_sgc.tdf Line: 23
+    Info (12023): Found entity 1: cmpr_sgc File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/db/cmpr_sgc.tdf Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_i6j.tdf
-    Info (12023): Found entity 1: cntr_i6j File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/cntr_i6j.tdf Line: 26
+    Info (12023): Found entity 1: cntr_i6j File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/db/cntr_i6j.tdf Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_egi.tdf
-    Info (12023): Found entity 1: cntr_egi File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/cntr_egi.tdf Line: 28
+    Info (12023): Found entity 1: cntr_egi File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/db/cntr_egi.tdf Line: 28
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_qgc.tdf
-    Info (12023): Found entity 1: cmpr_qgc File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/cmpr_qgc.tdf Line: 23
+    Info (12023): Found entity 1: cmpr_qgc File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/db/cmpr_qgc.tdf Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_23j.tdf
-    Info (12023): Found entity 1: cntr_23j File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/cntr_23j.tdf Line: 28
+    Info (12023): Found entity 1: cntr_23j File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/db/cntr_23j.tdf Line: 28
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_ngc.tdf
-    Info (12023): Found entity 1: cmpr_ngc File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/cmpr_ngc.tdf Line: 23
+    Info (12023): Found entity 1: cmpr_ngc File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/db/cmpr_ngc.tdf Line: 23
 Info (12033): Analysis and Synthesis generated Signal Tap or debug node instance "auto_signaltap_0"
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2023.07.22.00:16:36 Progress: Loading sld605b8bcd/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2023.07.22.15:49:50 Progress: Loading sld605b8bcd/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -1023,65 +1025,67 @@ Info (11172): Ident: "alt_sld_fab" instantiated altera_connection_identification
 Info (11172): Alt_sld_fab: Done "alt_sld_fab" with 6 modules, 6 files
 Info (11171): Finished IP generation for the debug fabric: alt_sld_fab.
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld605b8bcd/alt_sld_fab.v
-    Info (12023): Found entity 1: alt_sld_fab File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/ip/sld605b8bcd/alt_sld_fab.v Line: 9
+    Info (12023): Found entity 1: alt_sld_fab File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/db/ip/sld605b8bcd/alt_sld_fab.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld605b8bcd/submodules/alt_sld_fab_alt_sld_fab.v
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/ip/sld605b8bcd/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/db/ip/sld605b8bcd/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld605b8bcd/submodules/alt_sld_fab_alt_sld_fab_ident.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/ip/sld605b8bcd/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/db/ip/sld605b8bcd/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld605b8bcd/submodules/alt_sld_fab_alt_sld_fab_presplit.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/ip/sld605b8bcd/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/db/ip/sld605b8bcd/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
 Info (12021): Found 2 design units, including 1 entities, in source file db/ip/sld605b8bcd/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd
-    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/ip/sld605b8bcd/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 102
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/ip/sld605b8bcd/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
+    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/db/ip/sld605b8bcd/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 102
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/db/ip/sld605b8bcd/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld605b8bcd/submodules/alt_sld_fab_alt_sld_fab_splitter.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/ip/sld605b8bcd/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/db/ip/sld605b8bcd/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
 Info (278001): Inferred 1 megafunctions from design logic
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "PWM:p|Mult0" File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/pwm.v Line: 32
-Info (12130): Elaborated megafunction instantiation "PWM:p|lpm_mult:Mult0" File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/pwm.v Line: 32
-Info (12133): Instantiated megafunction "PWM:p|lpm_mult:Mult0" with the following parameter: File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/pwm.v Line: 32
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "PWM:p|Mult0" File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/pwm.v Line: 32
+Info (12130): Elaborated megafunction instantiation "PWM:p|lpm_mult:Mult0" File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/pwm.v Line: 32
+Info (12133): Instantiated megafunction "PWM:p|lpm_mult:Mult0" with the following parameter: File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/pwm.v Line: 32
     Info (12134): Parameter "LPM_WIDTHA" = "7"
-    Info (12134): Parameter "LPM_WIDTHB" = "9"
-    Info (12134): Parameter "LPM_WIDTHP" = "16"
-    Info (12134): Parameter "LPM_WIDTHR" = "16"
+    Info (12134): Parameter "LPM_WIDTHB" = "16"
+    Info (12134): Parameter "LPM_WIDTHP" = "23"
+    Info (12134): Parameter "LPM_WIDTHR" = "23"
     Info (12134): Parameter "LPM_WIDTHS" = "1"
     Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
     Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "YES"
-    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
-Info (12131): Elaborated megafunction instantiation "PWM:p|lpm_mult:Mult0|multcore:mult_core", which is child of megafunction instantiation "PWM:p|lpm_mult:Mult0" File: d:/intel_lite_19.1/quartus/libraries/megafunctions/lpm_mult.tdf Line: 309
-Info (12131): Elaborated megafunction instantiation "PWM:p|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "PWM:p|lpm_mult:Mult0" File: d:/intel_lite_19.1/quartus/libraries/megafunctions/multcore.tdf Line: 229
-Info (12131): Elaborated megafunction instantiation "PWM:p|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]", which is child of megafunction instantiation "PWM:p|lpm_mult:Mult0" File: d:/intel_lite_19.1/quartus/libraries/megafunctions/mpar_add.tdf Line: 78
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_mgh.tdf
-    Info (12023): Found entity 1: add_sub_mgh File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/db/add_sub_mgh.tdf Line: 23
-Info (12131): Elaborated megafunction instantiation "PWM:p|lpm_mult:Mult0|altshift:external_latency_ffs", which is child of megafunction instantiation "PWM:p|lpm_mult:Mult0" File: d:/intel_lite_19.1/quartus/libraries/megafunctions/lpm_mult.tdf Line: 352
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "6"
+Info (12131): Elaborated megafunction instantiation "PWM:p|lpm_mult:Mult0|multcore:mult_core", which is child of megafunction instantiation "PWM:p|lpm_mult:Mult0" File: c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_mult.tdf Line: 309
+Info (12131): Elaborated megafunction instantiation "PWM:p|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "PWM:p|lpm_mult:Mult0" File: c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/multcore.tdf Line: 229
+Info (12131): Elaborated megafunction instantiation "PWM:p|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]", which is child of megafunction instantiation "PWM:p|lpm_mult:Mult0" File: c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/mpar_add.tdf Line: 78
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_kgh.tdf
+    Info (12023): Found entity 1: add_sub_kgh File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/db/add_sub_kgh.tdf Line: 23
+Info (12131): Elaborated megafunction instantiation "PWM:p|lpm_mult:Mult0|altshift:external_latency_ffs", which is child of megafunction instantiation "PWM:p|lpm_mult:Mult0" File: c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_mult.tdf Line: 352
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "status[2]" is stuck at GND File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart_test.v Line: 6
-    Warning (13410): Pin "status[3]" is stuck at GND File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart_test.v Line: 6
-    Warning (13410): Pin "status[4]" is stuck at GND File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart_test.v Line: 6
-    Warning (13410): Pin "status[5]" is stuck at GND File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart_test.v Line: 6
-    Warning (13410): Pin "status[6]" is stuck at GND File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart_test.v Line: 6
-    Warning (13410): Pin "status[7]" is stuck at GND File: C:/Users/hp/Music/IIT_Guwahati-main/uart_test/uart_test.v Line: 6
+    Warning (13410): Pin "status[2]" is stuck at GND File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart_test.v Line: 6
+    Warning (13410): Pin "status[3]" is stuck at GND File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart_test.v Line: 6
+    Warning (13410): Pin "status[4]" is stuck at GND File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart_test.v Line: 6
+    Warning (13410): Pin "status[5]" is stuck at GND File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart_test.v Line: 6
+    Warning (13410): Pin "status[6]" is stuck at GND File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart_test.v Line: 6
+    Warning (13410): Pin "status[7]" is stuck at GND File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart_test.v Line: 6
+    Warning (13410): Pin "gndl" is stuck at GND File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart_test.v Line: 9
+    Warning (13410): Pin "gndr" is stuck at GND File: C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/uart_test.v Line: 9
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
 Info (17049): 4 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file C:/Users/hp/Music/IIT_Guwahati-main/uart_test/output_files/uart_test.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/output_files/uart_test.map.smsg
 Info (35024): Successfully connected in-system debug instance "auto_signaltap_0" to all 121 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1488 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1510 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
-    Info (21059): Implemented 24 output pins
-    Info (21061): Implemented 1413 logic cells
+    Info (21059): Implemented 27 output pins
+    Info (21061): Implemented 1432 logic cells
     Info (21064): Implemented 44 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
-    Info: Peak virtual memory: 4884 megabytes
-    Info: Processing ended: Sat Jul 22 00:16:46 2023
-    Info: Elapsed time: 00:00:29
-    Info: Total CPU time (on all processors): 00:00:34
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 22 warnings
+    Info: Peak virtual memory: 4836 megabytes
+    Info: Processing ended: Sat Jul 22 15:50:03 2023
+    Info: Elapsed time: 00:00:30
+    Info: Total CPU time (on all processors): 00:00:38
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/hp/Music/IIT_Guwahati-main/uart_test/output_files/uart_test.map.smsg.
+The suppressed messages can be found in C:/Users/Harshal/Desktop/stairClimbing/IIT_Guwahati/uart_test/output_files/uart_test.map.smsg.
 
 

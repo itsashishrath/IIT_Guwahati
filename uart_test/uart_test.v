@@ -6,7 +6,7 @@ module uart_test(input clk_50M, input rst_n, output tx, input rx,
 output [7:0] status,
 output [7:0] rec,
  output ledA,output ledS,output ledD,output ledW, output uart_clk,
- output l_motor);
+ output l_motor, output gndl, output r_motor, output gndr);
 
 
 
@@ -25,6 +25,8 @@ reg leds=1'b0;
 reg ledd=1'b0;
 reg [7:0]left_motor=8'd0;
 reg [7:0] store=8'd0;
+
+wire lmotor;
 
 assign status=state;
 assign rec=rec_temp;
@@ -127,7 +129,10 @@ assign ledW=ledw;
 
 uart uart_obj(.rst_n(rst_n), .clk_50M(clk_50M), .in_data(8'h4D), .tx(tx_temp));
 
-PWM p(.clk_50(clk_50M), .DUTY_CYCLE(left_motor), .out(l_motor));
+PWM p(.clk_50(clk_50M), .DUTY_CYCLE(left_motor), .out(lmotor));
+
+assign l_motor=lmotor;
+assign r_motor=lmotor;
 
 assign tx=tx_temp;
 
